@@ -1,0 +1,6 @@
+WebElement SelectCource = driver.findElement(By.id("course"));
+		Select SelectCountry = new Select(SelectCource);
+		List<WebElement> CountrynameOptions = SelectCountry.getOptions();
+		for(WebElement option : CountrynameOptions) {
+			System.out.println(option.getText());
+		}
